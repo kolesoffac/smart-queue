@@ -17,7 +17,6 @@ export default {
 	dest: 'build/' + (process.env.BUILD_MODE === 'production'?'smart-queue.min.js':'smart-queue.js'),
 	format: 'umd',
 	moduleName: 'SmartQueue',
-	//sourceMap: 'inline',
 	plugins: [
 		//css({ output: 'build/sx-leaflet.css' }),
 		// visualizer({
