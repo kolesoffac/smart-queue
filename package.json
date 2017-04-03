@@ -1,0 +1,53 @@
+{
+  "name": "smart-queue",
+  "version": "0.0.1",
+  "description": "Queue for sync controlled work with async task",
+  "main": "build/smart-queue.js",
+  "scripts": {
+    "build": "echo \"Run build...\" && rollup -c && echo \"Finish build...\"",
+    "build-lint": "echo \"Run build prod...\" && BUILD_MODE=eslint rollup -c && echo \"Finish build...\"",
+    "build-prod": "echo \"Run build prod...\" && BUILD_MODE='production' rollup -c && echo \"Finish build...\"",
+    "build-all": "npm run build && npm run build-prod",
+    "watch": "echo \"Run build...\" && rollup -c --watch && echo \"Finish build and start watch...\"",
+    "reload": "livereload 'build/'",
+    "sample": "npm-run-all --parallel reload dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolesoffac/smart-queue.git"
+  },
+  "author": "Kolesov Anatoly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kolesoffac/smart-queue/issues"
+  },
+  "homepage": "https://github.com/kolesoffac/smart-queue.git",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "livereload": "^0.6.0",
+    "npm-run-all": "^3.1.2",
+    "path": "^0.12.7",
+    "rollup": "^0.37.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-cleanup": "^1.0.0",
+    "rollup-plugin-commonjs": "^6.0.1",
+    "rollup-plugin-css-only": "^0.2.0",
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-inject": "^2.0.0",
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-progress": "^0.1.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-plugin-visualizer": "^0.2.0",
+    "rollup-watch": "^2.5.0",
+    "uglify-js": "^2.7.5"
+  },
+  "dependencies": {
+  }
+}

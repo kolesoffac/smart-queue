@@ -1,0 +1,24 @@
+{
+  "name": "smart-queue",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kolesoffac/smart-queue.git",
+  "authors": [
+    "Anatoly Kolesov <kolesoffac@gmail.com>"
+  ],
+  "description": "Queue for sync controlled work with async task",
+  "main": "build/smart-queue.js",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "rollup.config.js",
+    "package.json"
+  ]
+}
